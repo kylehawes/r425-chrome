@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Industry-Demi;
+    src: url(../fonts/Industry-Demi-webfont.woff2);
+}
+@font-face {
+    font-family: Industry-Light;
+    src: url(../fonts/Industry-Light-webfont.woff2);
+}
+@font-face {
+    font-family: Industry-Medium;
+    src: url(../fonts/Industry-Medium-webfont.woff2);
+}
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(../fonts/Nunito-Regular.woff2);
+}
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Nunito-Regular;
+    margin: 0px;
+    padding: 0px;
+    background: #202124;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Industry-Light;
+}
+
+*, *:before, *:after {
+    box-sizing: unset;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.main-container {
+    position: absolute;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    min-width: 800px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.unit {
+    position: absolute;
+    right: 12px;
+    -webkit-transform: translate(0, 65%);
+}
+
+.flir-setting {
+    position: relative;
+}
+
+.CommandContainer label
+{
+    padding: 14px 0;
+    display: inline-block;
+    width: 50%;
+}
+
+.CommandContainer input
+{
+    margin-bottom: 6px;
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    outline: none;
+    height: 36px;
+}
+
+.padding-small
+{
+  padding: 10px;
+}
+
+.padding-left
+{
+ padding-left: 10px;
+}

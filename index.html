@@ -1,0 +1,59 @@
+<head>
+<title>Bluetooth API Test</title>
+   <link href="css/w3.css" rel="stylesheet" type="text/css"/>
+   <link href="css/main.css" rel="stylesheet" type="text/css"/>
+   <script src="js/jquery.js"></script>
+   <script src="js/bluetooth.js"></script>
+</head>
+
+<body>
+
+   <div class="main-container">
+      <div class="padding-small">
+         <h1>Bluetooth Web Testing</h1>
+         <button type="button" id="Connect">Connect</button>
+         <button type="button" id="Disconnect">Disconnect</button>
+      </div>
+
+      <div class="padding-small">
+         <label for="commandbox">Send Command</label>
+         <input type="text" id="commandbox" placeholder="enter command">
+      </div>
+
+      <!-- hard coded setup for now -->
+      <div class="CommandContainer">
+         <div class="padding-left w3-half">
+            <form>
+               <h3>Status Update</h3>
+               <label for="DoseStatus"><span>Dose Status</span></label>
+               <input type="text" id="DoseStatus" name="DeadTime" readonly="">
+
+               <div class="flir-setting">
+                  <label for="DoseRate"><span>Dose Rate</span></label>
+                  <input type="text" id="DoseRate" name="DeadTime" readonly="">
+                  <span class="unit">nSv/h</span>
+               </div>
+
+               <div class="flir-setting">
+                  <label for="Counts"><span>Counts</span></label>
+                  <input type="text" id="Counts" name="DeadTime" readonly="">
+                  <span class="unit">cps</span>
+               </div>
+
+               <div class="flir-setting">
+                  <label for="TotalDose"><span>Total Dose</span></label>
+                  <input type="text" id="TotalDose" name="DeadTime" readonly="">
+                  <span class="unit">nSv</span>
+               </div>
+
+               <div class="flir-setting">
+                  <label for="Neutrons"><span>Neutrons</span></label>
+                  <input type="text" id="Neutrons" name="DeadTime" readonly="">
+                  <span class="unit">cps</span>
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+</body>
