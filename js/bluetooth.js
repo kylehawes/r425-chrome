@@ -58,6 +58,8 @@ async function ConnectBluetooth()
 	$('#Disconnect').prop("disabled", deviceCache == null);
 	$('#commandbox').prop("disabled", deviceCache == null);
 
+	SendCommand("!stup 1");
+
 	/*navigator.bluetooth.requestDevice({
 	  filters: [{
 	    services: ['09b0d0a5-f374-4051-a819-67c235f31438']
